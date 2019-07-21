@@ -1,0 +1,13 @@
+.sidebar {
+    float: right;
+    position: fixed;
+    right: 20px;
+}
+
+.sidebarContainer {
+    padding-right: 20px;
+}
+
+.sideberMenus {
+    list-style-type: none;
+}
