@@ -1,3 +1,7 @@
+.root {
+    background-color: #f3f3f3;
+}
+
 .sidebar {
     float: right;
     position: fixed;
@@ -10,4 +14,29 @@
 
 .sideberMenus {
     list-style-type: none;
+}
+
+.headerImg {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+    background-size: auto 100%;
+    background: url(../images/mainImg.JPG) center center;
+}
+
+.headerContainer {
+    text-align: center;
+}
+
+.headerTitle {
+    font: #111;
+    font-size: 50px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.headerDesc {
+    font-size: 30px;
 }
