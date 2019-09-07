@@ -1,14 +1,94 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>hmochizuki's portfolio</title>
     <!-- <link rel='icon' href='./img/icon'> -->
     <link rel='stylesheet' href='./css/index.css'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script type='text/javascript' src='./js//index.js'></script>
   </head>
-  <body>
-    <h1>Hello, World</h1>
+  <body onLoad="getSkillsets()">
+    <div class='root'>
+      <div class='sidebar'>
+        <div class='sidebarContainer'>
+          <h1><img src='images/logo.png' width='87' height='25' alt='logo'></h1>
+          <div class='sideberPanel'>
+            <ul class='sideberMenus'>
+              <li><a href='#top'>TOP</a></li>
+              <li><a href='#aboutMe'>ABOUT ME</a></li>
+              <li><a href='#skills'>SKILLS</a></li>
+              <li><a href='#contact'>CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <header class='headerContainer'>
+        <div class='headerImg'>
+          <div class='titleWrapper'>
+            <h1 class='headerTitle'>hmochizuki's portfolio</h1>
+            <p class='headerDesc'>Web Enginner</p>
+          </div>
+        </div>
+      </header>
+      <main class='contents'>
+        <section id='aboutMe' class='sectionWrapper'>
+            <h1 class='contentTitle'>ABOUT ME</h1>
+            <div class='contantContainer'>
+                <img class='aboutMeImg' src="./images/aboutMe.png">
+                <p class='abountMeDesc'>
+                  WEBエンジニア。2018年新卒で某Sierに入社。その後、フロントエンジニアとしてWebアプリの構築/エンハンス/保守を行ってきた。<br/>
+                  好きなものは、美味しい食事とうまい酒。<br/>
+                  趣味は、学生時代から続けているバドミントン。<br/>
+                  頻度は多くないものの、旅行も好きで、ヘッダーのバックグラウンドイメージはメルボルンで撮影したもの。<br/>
+                  最近の悩みは、尿酸値が高くなってきたこと。ビールが飲めなくなる恐怖に悩まされている。<br/>
+                </p>
+            </div>
+        </section>
+        <section id='skills' class='sectionWrapper'>
+            <h1 class='contentTitle'>SKILLS</h1>
+            <div class='contentDesc'>
+              <p>
+                業務・学習の末、習得した技術の一覧と習熟度です。<br/>
+                フロントエンド技術を中心に学習・習得しております。特にReactは業務で2年ほど使っており自信◎。<br/>
+                それ以外にも、データ分析や業務プロセス改善にも取り組んだ経験があります。
+              </p>
+            </div>
+            <!-- <div class='contantContainer'> -->
+              <div class='skillsets'>
+                <div class='skillset'><canvas id='feSlillset' height='200px'></div>
+                <div class='skillset'><canvas id='ssSlillset' height='200px'></div>
+                <div class='skillset'><canvas id='devOpsSlillset' height='200px'></div>
+              </div>
+              <ol class='chartDesc'>
+                <li>ちょっと触った</li>
+                <li>そこそこ使いこなしてる</li>
+                <li>任せて！</li>
+                <li>教えてあげよう。</li>
+                <li>導入もできるよ</li>
+              </ol>
+            </div>
+        </section>
+        <section id='contact' class='contactContainer'>
+          <h1 class='contentTitle'>CONTACT</h1>
+          <div class='contact'>
+            <div>
+              <a href='https://github.com/hmochizuki' target='_blank'><img src='images/gitHub.png' width='60px' height='60px' alt='Instagram'><br/>GitHub</a>
+            </div>
+            <div class='contactIcon'>
+              <a href='https://www.facebook.com/profile.php?id=100008280607483' target='_blank'><img src='images/iconFb.png' width='60px' height='60px' alt='FB'><br/>Facebook</a>
+            </div>
+            <div>
+              <a href='https://twitter.com/hiroshi_mochy' target='_blank'><img src='images/iconTw.png' width='60px' height='60px' alt='FB'><br/>Twitter</a>
+            </div>
+          </div>
+        </section>
+        <footer class='footerContainer'>
+          <div  class='topLink'><a href='#'>TOP</a></div>
+          <div class='copyright'>©️ 2019 H Mochizuki</div>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>
