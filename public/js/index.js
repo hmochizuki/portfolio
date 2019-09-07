@@ -57,7 +57,7 @@ function getSkillsets() {
   var devOpsData = {
     labels: ['Slack', 'JIRA', 'GitHub/GitLab', 'Docker', 'Jenkins', 'Confluence'],
     datasets: [{
-      data: [3, 2, 2, 1, 2, 2],
+      data: [3, 2, 3, 1, 2, 2],
       label: 'Dev Ops',
       backgroundColor: 'rgba(255, 195, 93, 0.2)',
       borderColor: 'rgba(255, 195, 93, 1)',
